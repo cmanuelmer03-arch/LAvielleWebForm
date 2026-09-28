@@ -11,10 +11,7 @@ namespace TiendaRopaWebForm.Account
         }
 
         // AGREGAR ESTE MÉTODO:
-        protected void btnRegistrar_Click(object sender, EventArgs e)
-        {
-            
-        }
+    
         // Método para ir a la página principal
         protected void btnIrInicio_Click(object sender, EventArgs e)
         {
@@ -49,6 +46,12 @@ namespace TiendaRopaWebForm.Account
         protected void btnIrLogin_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Login.aspx");
+        }
+        protected void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            //  guardarías el nuevo usuario en la base de datos...
+            // Una vez registrado, rediriges a main.aspx
+            Response.Redirect("main.aspx");
         }
     }
 }

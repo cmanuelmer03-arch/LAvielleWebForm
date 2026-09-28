@@ -59,7 +59,7 @@
                             <asp:CheckBox ID="chkRecordarme" runat="server" />
                             <span class="checkbox-label">Recordarme</span>
                         </label>
-                        <asp:HyperLink ID="lnkOlvidoPassword" runat="server" NavigateUrl="~/RecuperarPassword.aspx" CssClass="link-olvido">¿Olvidaste tu contraseña?</asp:HyperLink>
+                        <asp:HyperLink ID="lnkOlvidoPassword" runat="server" NavigateUrl="RecuperarPassword.aspx" CssClass="link-olvido">¿Olvidaste tu contraseña?</asp:HyperLink>
                     </div>
 
                     <!-- Botón Iniciar Sesión (C# Web Forms) -->
