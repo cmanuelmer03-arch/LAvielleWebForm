@@ -1,0 +1,183 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head runat="server">
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+        <%: Page.Title %> - L'Avielle
+    </title>
+
+
+    <link href="<%= ResolveUrl("~/Content/bootstrap.css") %>" rel="stylesheet" />
+
+    <link href="<%= ResolveUrl("~/Content/Site.css") %>" rel="stylesheet" />
+
+
+</head>
+
+
+<body>
+
+<form runat="server">
+
+
+<div class="pagina">
+
+
+    <aside class="sidebar">
+
+
+        <div class="logo">
+            L'Avielle
+        </div>
+
+
+<nav class="menu">
+
+    <a href="DashboardCliente.aspx">
+        Dashboard
+    </a>
+
+    <a href="ReservarCita.aspx">
+        Reservar Cita
+    </a>
+
+    <a href="MisReservas.aspx">
+        Mis Reservas
+    </a>
+
+    <a href="Promociones.aspx">
+        Promociones
+    </a>
+
+    <a href="PerfilCliente.aspx">
+        Mi Perfil
+    </a>
+
+</nav>
+
+</nav>
+
+
+        </nav>
+
+
+
+        <div class="cerrar">
+
+            Cerrar Sesión
+
+        </div>
+
+
+    </aside>
+
+
+
+
+    <main class="contenido">
+
+
+        <asp:ContentPlaceHolder 
+            ID="MainContent" 
+            runat="server">
+
+
+        </asp:ContentPlaceHolder>
+
+
+    </main>
+
+
+</div>
+
+
+
+
+
+<footer class="footer">
+
+
+    <div class="footer-seccion">
+
+
+        <h2>
+            L’Avielle
+        </h2>
+
+
+        <p>
+            Un concepto exclusivo de salón de belleza
+            y spa de bienestar, donde el lujo se
+            traduce en calma, elegancia y atención
+            de nivel internacional.
+        </p>
+
+
+    </div>
+
+
+
+    <div class="footer-seccion">
+
+
+        <h4>
+            NAVEGACIÓN
+        </h4>
+
+
+        <p>Inicio</p>
+        <p>Servicios</p>
+        <p>Especialistas</p>
+        <p>Perfil</p>
+        <p>Registrarse</p>
+
+
+    </div>
+
+
+
+
+    <div class="footer-seccion">
+
+
+        <h4>
+            CONTACTO & UBICACIÓN
+        </h4>
+
+
+        <p>
+            Paseo de la Reforma 402,
+            Juárez, CDMX
+        </p>
+
+
+        <p>
+            +52 55 1234 5678
+        </p>
+
+
+        <p>
+            contacto@lavielle.com
+        </p>
+
+
+    </div>
+
+
+</footer>
+
+
+
+</form>
+
+</body>
+
+</html>

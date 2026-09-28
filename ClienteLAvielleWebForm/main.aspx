@@ -1,0 +1,262 @@
+﻿<%@ Page Title="Home Page" Language="C#" AutoEventWireup="true" CodeFile="main.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'Avielle - Home Page</title>
+
+    <!-- Importando fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Content/vistageneral.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="contenedor-lavielle">
+            <!-- BARRA DE NAVEGACIÓN -->
+            <header class="header-lavielle">
+                <a href="#" class="logo">L'Avielle</a>
+                
+            <nav class="menu-navegacion">
+                <asp:HyperLink ID="lnkInicio" runat="server" NavigateUrl="main.aspx" CssClass="nav-link active">Inicio</asp:HyperLink>
+                <asp:HyperLink ID="lnkEspecialistas" runat="server" NavigateUrl="Especialistas.aspx" CssClass="nav-link">Especialistas</asp:HyperLink>
+                <asp:HyperLink ID="lnkServicios" runat="server" NavigateUrl="Servicios.aspx" CssClass="nav-link">Servicios</asp:HyperLink>
+                <asp:HyperLink ID="lnkSucursales" runat="server" NavigateUrl="Sucursales.aspx" CssClass="nav-link">Sucursales</asp:HyperLink>
+            </nav>
+                <div class="acciones-header">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx" CssClass="btn-header-login">Iniciar Sesión</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Registro.aspx" CssClass="btn-header-reserva">REGISTRARSE</asp:HyperLink> 
+                </div>
+            </header>
+
+            <!-- SECCIÓN PRINCIPAL (HERO) -->
+            <section class="hero-lavielle">
+                <span class="hero-etiqueta">Salón de Belleza Premium</span>
+                <h1 class="hero-titulo">Donde la Belleza se<br>Encuentra con la Elegancia</h1>
+                <p class="hero-descripcion">
+                    Descubre una experiencia única de cuidado personal en el corazón de la ciudad. Servicios<br>diseñados a la medida de tu sofisticación.
+                </p>
+                
+                <div class="acciones-header">
+                        <asp:HyperLink ID="lnkLoginMenu" runat="server" NavigateUrl="Login.aspx" CssClass="btn-header-login">Iniciar Sesión</asp:HyperLink>
+                        <asp:HyperLink ID="lnkRegistroMenu" runat="server" NavigateUrl="Registro.aspx" CssClass="btn-header-reserva">REGISTRARSE</asp:HyperLink> 
+                </div>
+            </section>
+
+            <!-- SECCIÓN FILOSOFÍA -->
+            <section class="seccion-lavielle">
+                <div class="filosofia-grid">
+                    <div class="filosofia-texto">
+                        <span class="etiqueta-oro">Nuestra Filosofía</span>
+                        <h2 class="titulo-seccion">La Esencia de L'Avielle</h2>
+                        <div class="separador-izq"></div>
+                        <p>En L'Avielle, creemos que el cuidado personal no es solo una rutina, sino un ritual sagrado de bienestar y autoexpresión. Nos dedicamos a revelar tu versión más radiante mediante técnicas de vanguardia y productos premium de procedencia orgánica y cruelty-free.</p>
+                        <p>Nuestro selecto equipo de estilistas internacionales y expertos en estética diseña cada tratamiento con una atención meticulosa al detalle, garantizando un servicio personalizado que trasciende los estándares de la peluquería convencional.</p>
+                        <div class="firma-directivo">
+                            <span>El Equipo Directivo de L'Avielle</span>
+                        </div>
+                    </div>
+                    <div class="filosofia-img">
+                        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1000&auto=format&fit=crop" alt="Filosofía L'Avielle">
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN SERVICIOS -->
+            <section class="seccion-lavielle" style="background-color: #ffffff;">
+                <div class="cabecera-seccion">
+                    <span class="etiqueta-oro">Nuestras Especialidades</span>
+                    <h2 class="titulo-seccion">Servicios Exclusivos</h2>
+                    <div class="separador-oro"></div>
+                </div>
+                
+                <div class="grid-4-cols">
+                    <!-- Tarjeta 1 -->
+                    <div class="tarjeta-servicio">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=600&auto=format&fit=crop" alt="Corte y Estilismo">
+                        <h3>Corte & Estilismo</h3>
+                        <p>Transformación y diseño personalizado acorde a tus facciones, buscando potenciar tu frescura natural con acabados modernos.</p>
+                        <a href="#" class="enlace-oro">VER MÁS &#8594;</a>
+                    </div>
+            <!-- Tarjeta 2 -->
+            <div class="tarjeta-servicio">
+                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=600&auto=format&fit=crop" alt="Coloración">
+                <h3>Coloración</h3>
+                <p>Técnicas exclusivas de Balayage, Babylights y coloración orgánica de alta fijación y brillo tridimensional para cuidar tu cabello.</p>
+                <a href="#" class="enlace-oro">VER MÁS &#8594;</a>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="tarjeta-servicio">
+                <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=600&auto=format&fit=crop" alt="Tratamientos Capilares">
+                <h3>Tratamientos Capilares</h3>
+                <p>Rituales de nutrición profunda, hidratación con ácido hialurónico y botox capilar para recuperar la sedosidad y fuerza.</p>
+                <a href="#" class="enlace-oro">VER MÁS &#8594;</a>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="tarjeta-servicio">
+                <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=600&auto=format&fit=crop" alt="Maquillaje">
+                <h3>Maquillaje & Estética</h3>
+                <p>Maquillaje profesional para eventos y tratamientos estéticos de vanguardia para lucir una piel radiante y descansada.</p>
+                <a href="#" class="enlace-oro">VER MÁS &#8594;</a>
+            </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN ESPECIALISTAS -->
+            <section class="seccion-lavielle">
+                <div class="cabecera-seccion">
+                    <span class="etiqueta-oro">Expertos al cuidado de ti</span>
+                    <h2 class="titulo-seccion">Nuestros Especialistas</h2>
+                    <div class="separador-oro"></div>
+                </div>
+
+                <div class="grid-3-cols">
+                    <!-- Especialista 1 -->
+                    <div class="tarjeta-especialista">
+                        <div class="especialista-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=400&auto=format&fit=crop" alt="Helena Rosales">
+                        </div>
+                        <h3>Helena Rosales</h3>
+                        <p>Directora Creativa & Colorista</p>
+                    </div>
+                    <!-- Especialista 2 -->
+                    <div class="tarjeta-especialista">
+                        <div class="especialista-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1618077360395-f3068be8e001?q=80&w=400&auto=format&fit=crop" alt="Mateo Valenzuela">
+                        </div>
+                        <h3>Mateo Valenzuela</h3>
+                        <p>Master Estilista de Corte</p>
+                    </div>
+                    <!-- Especialista 3 -->
+                    <div class="tarjeta-especialista">
+                        <div class="especialista-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop" alt="Sofía Montenegro">
+                        </div>
+                        <h3>Sofía Montenegro</h3>
+                        <p>Especialista en Estética & Skin Care</p>
+                    </div>
+                </div>
+                
+                <div class="btn-centro">
+                    <a href="#" class="btn btn-borde-oro">CONOCER AL EQUIPO</a>
+                </div>
+            </section>
+
+            <!-- SECCIÓN PROMOCIONES -->
+            <section class="seccion-lavielle" style="background-color: #ffffff;">
+                <div class="cabecera-seccion">
+                    <span class="etiqueta-oro">Ofertas Exclusivas</span>
+                    <h2 class="titulo-seccion">Promociones Especiales</h2>
+                    <div class="separador-oro"></div>
+                </div>
+
+                <div class="grid-3-cols" style="text-align: left; gap: 25px;">
+                    <div class="tarjeta-promo" style="background-image: url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=600&auto=format&fit=crop');">
+                        <div class="promo-contenido">
+                            <h2>-20%</h2>
+                            <p>Primera<br>Visita</p>
+                            <a href="#" class="btn-borde-blanco">APROVECHAR &#8594;</a>
+                        </div>
+                    </div>
+                    <div class="tarjeta-promo" style="background-image: url('https://images.unsplash.com/photo-1519671282429-b44660ead0a7?q=80&w=600&auto=format&fit=crop');">
+                        <div class="promo-contenido">
+                            <h2>Plan VIP</h2>
+                            <p>Pack Novia<br>Completo</p>
+                            <a href="#" class="btn-borde-blanco">APROVECHAR &#8594;</a>
+                        </div>
+                    </div>
+                    <div class="tarjeta-promo" style="background-image: url('https://images.unsplash.com/photo-1560869713-7d0a29430803?q=80&w=600&auto=format&fit=crop');">
+                        <div class="promo-contenido">
+                            <h2>15% OFF</h2>
+                            <p>Martes de<br>Color</p>
+                            <a href="#" class="btn-borde-blanco">APROVECHAR &#8594;</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN TESTIMONIOS -->
+            <section class="seccion-lavielle">
+                <div class="cabecera-seccion">
+                    <span class="etiqueta-oro">Experiencias Reales</span>
+                    <h2 class="titulo-seccion">Lo Que Dicen Nuestros Clientes</h2>
+                    <div class="separador-oro"></div>
+                </div>
+
+                <div class="grid-3-cols" style="text-align: left;">
+                    <div class="tarjeta-testimonio">
+                        <div class="estrellas">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                        <p>"La atención personalizada y el profesionalismo de Helena cambiaron por completo la salud de mi cabello. El mejor salón de la ciudad por lejos."</p>
+                        <span class="autor-testimonio">Mariana S.</span>
+                    </div>
+                    <div class="tarjeta-testimonio">
+                        <div class="estrellas">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                        <p>"Un oasis de tranquilidad. Vengo cada mes por su ritual de hidratación y salgo sintiéndome renovada por dentro y por fuera."</p>
+                        <span class="autor-testimonio">Gabriela F.</span>
+                    </div>
+                    <div class="tarjeta-testimonio">
+                        <div class="estrellas">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                        <p>"Me realicé el balayage con Mateo y el resultado superó todas mis expectativas. Transparencia en precios y máxima sofisticación."</p>
+                        <span class="autor-testimonio">Elena L.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN CTA Y FOOTER -->
+            <section class="seccion-cta">
+                <h2 class="titulo-seccion">&#191;Lista para Transformarte?</h2>
+                <p>Reserva tu ritual exclusivo hoy mismo y comienza la experiencia premium de cuidado capilar.</p>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-grid">
+                    <!-- Columna 1 -->
+                    <div>
+                        <a href="#" class="footer-logo">L'Avielle</a>
+                        <p>Un concepto exclusivo de salón de belleza y spa de bienestar, donde el lujo se traduce en calma, elegancia y atención de nivel internacional.</p>
+                        <div class="redes-sociales">
+                            <a href="#" class="icono-red">in</a>
+                            <a href="#" class="icono-red">fb</a>
+                            <a href="#" class="icono-red">ig</a>
+                        </div>
+                    </div>
+                    <!-- Columna 2 -->
+                    <div>
+                        <h4 class="footer-titulo">Navegación</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Servicios</a></li>
+                            <li><a href="#">Especialistas</a></li>
+                            <li><a href="#">Perfil</a></li>
+                            <li><a href="#">Iniciar Sesión</a></li>
+                            <li><a href="#">Registrarse</a></li>
+                        </ul>
+                    </div>
+                    <!-- Columna 3 -->
+                    <div>
+                        <h4 class="footer-titulo">Contacto & Ubicación</h4>
+                        <ul class="footer-links footer-contacto">
+                            <li><span>&#128205;</span> Paseo de la Reforma<br>402, Juárez, CDMX</li>
+                            <li><span>&#128222;</span> +52 55 1234 5678</li>
+                            <li><span>&#9993;</span> contacto@lavielle.com</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div>&copy; 2026 L'Avielle Salón de Belleza. Todos los derechos reservados.</div>
+                    <div class="footer-bottom-links">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos del Servicio</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
