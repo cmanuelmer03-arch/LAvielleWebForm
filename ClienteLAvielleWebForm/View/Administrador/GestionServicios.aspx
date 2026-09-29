@@ -11,7 +11,7 @@
     <title>Gestión de Servicios - L'Avielle</title>
 
     <!-- conexion con css -->
-    <link href="Content/gestionservicios.css" rel="stylesheet" />
+<link href="<%= ResolveUrl("~/Content/gestionservicios.css") %>" rel="stylesheet" />
 
 </head>
 

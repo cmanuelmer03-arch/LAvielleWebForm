@@ -59,10 +59,10 @@
 
                 <div class="servicio-card seleccionado">
 
-                    <img
-                        class="servicio-imagen"
-                        src="Images/servicio1.jpeg"
-                        alt="Tintes y Decoloración" />
+                    <img 
+    class="servicio-imagen" 
+    src="<%= ResolveUrl("~/Images/servicio1.jpeg") %>" 
+    alt="Tintes y Decoloración" />
 
                     <div class="servicio-info">
 
@@ -81,10 +81,10 @@
 
                 <div class="servicio-card">
 
-                    <img
-                        class="servicio-imagen"
-                        src="Images/servicio2.jpeg"
-                        alt="Manicura Premium" />
+                   <img 
+    class="servicio-imagen" 
+    src="<%= ResolveUrl("~/Images/servicio2.jpeg") %>" 
+    alt="Manicura Premium" />
 
                     <div class="servicio-info">
 
@@ -103,10 +103,10 @@
 
                 <div class="servicio-card">
 
-                    <img
-                        class="servicio-imagen"
-                        src="Images/servicio3.jpeg"
-                        alt="Pedicura Spa" />
+                    <img 
+    class="servicio-imagen" 
+    src="<%= ResolveUrl("~/Images/servicio3.jpeg") %>" 
+    alt="Pedicura Spa" />
 
                     <div class="servicio-info">
 
@@ -125,10 +125,10 @@
 
                 <div class="servicio-card">
 
-                    <img
-                        class="servicio-imagen"
-                        src="Images/servicio4.jpeg"
-                        alt="Cortes de Pelo" />
+                   <img 
+    class="servicio-imagen" 
+    src="<%= ResolveUrl("~/Images/servicio4.jpeg") %>" 
+    alt="Corte de Pelo" />
 
                     <div class="servicio-info">
 
@@ -147,14 +147,14 @@
 
                 <div class="servicio-card">
 
-                    <img
-                        class="servicio-imagen"
-                        src="Images/servicio5.jpeg"
-                        alt="Tratamientos Capilares" />
+                    <img 
+    class="servicio-imagen" 
+    src="<%= ResolveUrl("~/Images/servicio5.jpeg") %>" 
+    alt="Tratamientos Capilares" />
 
                     <div class="servicio-info">
 
-                        <h3>
+                         <h3>
                             Tratamientos Capilares
                         </h3>
 
@@ -169,10 +169,10 @@
 
                 <div class="servicio-card">
 
-                    <img
-                        class="servicio-imagen"
-                        src="Images/servicio6.jpeg"
-                        alt="Servicios para Hombres" />
+                    <img 
+    class="servicio-imagen" 
+    src="<%= ResolveUrl("~/Images/servicio6.jpeg") %>" 
+    alt="Servicios para Hombres" />
 
                     <div class="servicio-info">
 
@@ -475,8 +475,8 @@
                 <div class="especialista-card seleccionado">
 
                     <img
-                        src="Images/valentina.jpeg"
-                        alt="Valentina Rojas" />
+    src="<%= ResolveUrl("~/Images/valentina.jpeg") %>"
+    alt="Valentina Rojas" />
 
                     <div class="especialista-info">
 
@@ -524,8 +524,8 @@
                 <div class="especialista-card">
 
                     <img
-                        src="Images/isabella.jpeg"
-                        alt="Isabella Marchetti" />
+    src="<%= ResolveUrl("~/Images/isabella.jpeg") %>"
+    alt="Isabella Marchetti" />
 
                     <div class="especialista-info">
 
@@ -573,8 +573,8 @@
                 <div class="especialista-card">
 
                     <img
-                        src="Images/sofia.jpeg"
-                        alt="Sofía Montenegro" />
+    src="<%= ResolveUrl("~/Images/sofia.jpeg") %>"
+    alt="Sofía Montenegro" />
 
                     <div class="especialista-info">
 

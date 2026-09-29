@@ -5,13 +5,13 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>L'Avielle - Home Page</title>
+    <title>L'Avielle - Iniciar Sesión</title>
 
-    <!-- Importando fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Content/vistageneral.css" />
+    <!-- Fuentes del sistema -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" />
+
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Content/vistageneral.css") %>" />
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -21,14 +21,14 @@
                 <a href="#" class="logo">L'Avielle</a>
                 
             <nav class="menu-navegacion">
-                <asp:HyperLink ID="lnkInicio" runat="server" NavigateUrl="main.aspx" CssClass="nav-link active">Inicio</asp:HyperLink>
-                <asp:HyperLink ID="lnkEspecialistas" runat="server" NavigateUrl="Especialistas.aspx" CssClass="nav-link">Especialistas</asp:HyperLink>
-                <asp:HyperLink ID="lnkServicios" runat="server" NavigateUrl="Servicios.aspx" CssClass="nav-link">Servicios</asp:HyperLink>
-                <asp:HyperLink ID="lnkSucursales" runat="server" NavigateUrl="Sucursales.aspx" CssClass="nav-link">Sucursales</asp:HyperLink>
-            </nav>
+                    <asp:HyperLink ID="lnkInicio" runat="server" NavigateUrl="~/View/Home/main.aspx" CssClass="nav-link">Inicio</asp:HyperLink>
+                    <asp:HyperLink ID="lnkEspecialistas" runat="server" NavigateUrl="~/View/Servicios/Especialistas.aspx" CssClass="nav-link">Especialistas</asp:HyperLink>
+                    <asp:HyperLink ID="lnkServicios" runat="server" NavigateUrl="~/View/Servicios/Servicios.aspx" CssClass="nav-link">Servicios</asp:HyperLink>
+                    <asp:HyperLink ID="lnkSucursales" runat="server" NavigateUrl="~/View/Servicios/Sucursales.aspx" CssClass="nav-link">Sucursales</asp:HyperLink>
+                </nav>
                 <div class="acciones-header">
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx" CssClass="btn-header-login">Iniciar Sesión</asp:HyperLink>
-                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Registro.aspx" CssClass="btn-header-reserva">REGISTRARSE</asp:HyperLink> 
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/View/Home/Registro.aspx" CssClass="btn-header-login">Iniciar Sesión</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/View/Home/Login.aspx" CssClass="btn-header-reserva">REGISTRARSE</asp:HyperLink> 
                 </div>
             </header>
 

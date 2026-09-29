@@ -11,7 +11,7 @@
     <title>Reportes Generales - L'Avielle</title>
 
     <!-- conexion con css -->
-    <link href="Content/reportesgenerales.css" rel="stylesheet" />
+    <link href="<%= ResolveUrl("~/Content/reportesgenerales.css") %>" rel="stylesheet" />
 
 </head>
 

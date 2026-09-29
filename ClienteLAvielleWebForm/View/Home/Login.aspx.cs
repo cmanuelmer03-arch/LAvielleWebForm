@@ -7,29 +7,34 @@ public partial class Login : System.Web.UI.Page
 
     protected void btnIniciarSesion_Click(object sender, EventArgs e)
     {
-        // 1. Obtener el correo del TextBox (Asegúrate de que tu control en Login.aspx tenga ID="txtEmail")
+        // Validar que el TextBox no esté vacío (Buena práctica)
+        if (string.IsNullOrWhiteSpace(txtEmail.Text))
+        {
+            // Aquí podrías mostrar un mensaje de error
+            return;
+        }
+
         string correo = txtEmail.Text.Trim().ToLower();
 
-        // 2. Evaluar el correo y redireccionar según el rol
         if (correo.Contains("@admin"))
         {
-            // Vista Administrador
-            Response.Redirect("Dashboard.aspx");
+            // CORREGIDO: Ruta completa a la carpeta Administrador
+            Response.Redirect("~/View/Administrador/Dashboard.aspx");
         }
         else if (correo.Contains("@gerente"))
         {
-            // Vista Gerente
+            // Asegúrate de que esta carpeta y archivo existan en tu proyecto
             Response.Redirect("~/Gerente/PanelGerente.aspx");
         }
         else if (correo.Contains("@recepcionista"))
         {
-            // Vista Recepcionista
+            // Asegúrate de que esta carpeta y archivo existan en tu proyecto
             Response.Redirect("~/Recepcion/PanelRecepcion.aspx");
         }
         else
         {
-            // Vista Cliente (Cualquier correo estándar)
-            Response.Redirect("DashboardCliente.aspx");
+            // CORREGIDO: Se agregó el slash después de ~
+            Response.Redirect("~/View/Cliente/DashboardCliente.aspx");
         }
     }
 }

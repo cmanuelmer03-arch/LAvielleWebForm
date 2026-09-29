@@ -11,7 +11,7 @@
     <title>Gestión de Sucursales - L'Avielle</title>
 
     <!-- conexion con css -->
-    <link href="Content/gestionsucursales.css" rel="stylesheet" />
+    <link href="<%= ResolveUrl("~/Content/gestionsucursales.css") %>" rel="stylesheet" />
 
 </head>
 

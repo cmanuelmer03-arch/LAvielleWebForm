@@ -20,44 +20,64 @@
         <header class="header-sitio">
             <div class="contenedor-header">
                 
-                <!-- Logo principal -->
-                <asp:HyperLink ID="lnkLogo" runat="server" NavigateUrl="~/Inicio.aspx" CssClass="logo-header">
-                    L'Avielle
-                </asp:HyperLink>
+<!-- Logo principal --> 
+<asp:HyperLink ID="lnkLogo" runat="server" 
+    NavigateUrl="~/View/Home/main.aspx" 
+    CssClass="logo-header"> 
+    L'Avielle 
+</asp:HyperLink> 
 
-                <!-- Menú de Navegación -->
-                <nav class="menu-navegacion">
-                <asp:HyperLink ID="lnkInicio" runat="server" NavigateUrl="main.aspx" CssClass="nav-link">Inicio</asp:HyperLink>
-                <asp:HyperLink ID="lnkEspecialistas" runat="server" NavigateUrl="Especialistas.aspx" CssClass="nav-link">Especialistas</asp:HyperLink>
-                <asp:HyperLink ID="lnkServicios" runat="server" NavigateUrl="Servicios.aspx" CssClass="nav-link">Servicios</asp:HyperLink>
-                <asp:HyperLink ID="lnkSucursales" runat="server" NavigateUrl="Sucursales.aspx" CssClass="nav-link active">Sucursales</asp:HyperLink>
-                </nav>
+<!-- Menú de Navegación --> 
+<nav class="menu-navegacion"> 
 
-                <!-- Acciones del Header -->
-                <div class="acciones-header">
-                           <asp:HyperLink ID="lnkLoginMenu" runat="server" NavigateUrl="Login.aspx" CssClass="btn-header-login">Iniciar Sesión</asp:HyperLink>
-                           <asp:HyperLink ID="lnkRegistroMenu" runat="server" NavigateUrl="Registro.aspx" CssClass="btn-header-reserva">REGISTRARSE</asp:HyperLink> 
-                </div>
-               
+    <asp:HyperLink ID="lnkInicio" 
+        runat="server" 
+        NavigateUrl="~/View/Home/main.aspx" 
+        CssClass="nav-link">
+        Inicio
+    </asp:HyperLink> 
 
-            </div>
-        </header>
+    <asp:HyperLink ID="lnkEspecialistas" 
+        runat="server" 
+        NavigateUrl="~/View/Administrador/Especialistas.aspx" 
+        CssClass="nav-link">
+        Especialistas
+    </asp:HyperLink> 
 
+    <asp:HyperLink ID="lnkServicios" 
+        runat="server" 
+        NavigateUrl="~/View/Administrador/GestionServicios.aspx" 
+        CssClass="nav-link">
+        Servicios
+    </asp:HyperLink> 
 
-        <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
-        <main class="contenido-principal">
+    <asp:HyperLink ID="lnkSucursales" 
+        runat="server" 
+        NavigateUrl="~/View/Administrador/GestionSucursales.aspx" 
+        CssClass="nav-link active">
+        Sucursales
+    </asp:HyperLink> 
 
-            <!-- BANNER HERO -->
-            <section class="hero-sucursales">
-                <div class="hero-overlay"></div>
-                <div class="hero-contenido">
-                    <span class="subtitulo-caps">UBICACIONES EXCLUSIVAS</span>
-                    <h1 class="titulo-hero">Nuestras Sucursales</h1>
-                    <p class="descripcion-hero">
-                        Encuentra el santuario L'Avielle más cercano a ti. Espacios diseñados para ofrecerte una experiencia de lujo, relajación y estética de primer nivel.
-                    </p>
-                </div>
-            </section>
+</nav> 
+
+<!-- Acciones del Header --> 
+<div class="acciones-header"> 
+
+    <asp:HyperLink ID="lnkLoginMenu" 
+        runat="server" 
+        NavigateUrl="~/View/Account/Login.aspx" 
+        CssClass="btn-header-login">
+        Iniciar Sesión
+    </asp:HyperLink> 
+
+    <asp:HyperLink ID="lnkRegistroMenu" 
+        runat="server" 
+        NavigateUrl="~/View/Account/Registro.aspx" 
+        CssClass="btn-header-reserva">
+        REGISTRARSE
+    </asp:HyperLink>  
+
+</div>
 
 
             <!-- SECCIÓN GRID DE SUCURSALES -->
@@ -190,16 +210,53 @@
                 </div>
 
                 <!-- Columna 2: Navegación Rápida -->
-                <div class="col-footer">
-                    <h4 class="titulo-footer">Navegación</h4>
-                    <ul class="lista-footer">
-                        <li><asp:HyperLink ID="ftrInicio" runat="server" NavigateUrl="~/Inicio.aspx">Inicio</asp:HyperLink></li>
-                        <li><asp:HyperLink ID="ftrNosotros" runat="server" NavigateUrl="~/Nosotros.aspx">Nosotros</asp:HyperLink></li>
-                        <li><asp:HyperLink ID="ftrServicios" runat="server" NavigateUrl="~/Servicios.aspx">Servicios</asp:HyperLink></li>
-                        <li><asp:HyperLink ID="ftrSucursales" runat="server" NavigateUrl="~/Sucursales.aspx">Sucursales</asp:HyperLink></li>
-                        <li><asp:HyperLink ID="ftrReservar" runat="server" NavigateUrl="~/Reservar.aspx">Reservar Cita</asp:HyperLink></li>
-                    </ul>
-                </div>
+  <div class="col-footer"> 
+    <h4 class="titulo-footer">Navegación</h4> 
+
+    <ul class="lista-footer"> 
+
+        <li>
+            <asp:HyperLink ID="ftrInicio" 
+                runat="server" 
+                NavigateUrl="~/View/Home/main.aspx">
+                Inicio
+            </asp:HyperLink>
+        </li> 
+
+        <li>
+            <asp:HyperLink ID="ftrNosotros" 
+                runat="server" 
+                NavigateUrl="~/View/Home/Nosotros.aspx">
+                Nosotros
+            </asp:HyperLink>
+        </li> 
+
+        <li>
+            <asp:HyperLink ID="ftrServicios" 
+                runat="server" 
+                NavigateUrl="~/View/Administrador/GestionServicios.aspx">
+                Servicios
+            </asp:HyperLink>
+        </li> 
+
+        <li>
+            <asp:HyperLink ID="ftrSucursales" 
+                runat="server" 
+                NavigateUrl="~/View/Administrador/GestionSucursales.aspx">
+                Sucursales
+            </asp:HyperLink>
+        </li> 
+
+        <li>
+            <asp:HyperLink ID="ftrReservar" 
+                runat="server" 
+                NavigateUrl="~/View/Cliente/ReservarCita.aspx">
+                Reservar Cita
+            </asp:HyperLink>
+        </li> 
+
+    </ul> 
+</div>
 
                 <!-- Columna 3: Horarios -->
                 <div class="col-footer">
