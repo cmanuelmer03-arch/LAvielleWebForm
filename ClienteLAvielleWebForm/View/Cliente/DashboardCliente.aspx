@@ -21,7 +21,7 @@
 
             <div class="usuario">
 
-                <img src="Images/avatar.jpeg" alt="María Silva" class="avatar" />
+               
 
                 <div class="usuario-info">
 

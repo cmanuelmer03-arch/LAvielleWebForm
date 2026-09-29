@@ -9,7 +9,7 @@
     <title>L'Avielle - Iniciar Sesión</title>
     <!-- Fuentes del sistema -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" />
-    <link rel="stylesheet" href="Content/vistageneral.css" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Content/vistageneral.css") %>" />
    
 </head>
 <body>
@@ -59,7 +59,12 @@
                             <asp:CheckBox ID="chkRecordarme" runat="server" />
                             <span class="checkbox-label">Recordarme</span>
                         </label>
-                        <asp:HyperLink ID="lnkOlvidoPassword" runat="server" NavigateUrl="RecuperarPassword.aspx" CssClass="link-olvido">¿Olvidaste tu contraseña?</asp:HyperLink>
+                      <asp:HyperLink ID="lnkOlvidoPassword" 
+    runat="server" 
+    NavigateUrl="~/View/Account/RecuperarPassword.aspx" 
+    CssClass="link-olvido">
+    ¿Olvidaste tu contraseña?
+</asp:HyperLink>
                     </div>
 
                     <!-- Botón Iniciar Sesión (C# Web Forms) -->
@@ -84,7 +89,12 @@
 
                     <!-- Enlace de Registro -->
                     <div class="pie-registro">
-                        ¿No tienes cuenta? <asp:HyperLink ID="lnkRegistrate" runat="server" NavigateUrl="~/Registro.aspx" CssClass="link-registro">Regístrate aquí</asp:HyperLink>
+                        ¿No tienes cuenta? <asp:HyperLink ID="lnkRegistrate" 
+    runat="server" 
+    NavigateUrl="~/View/Account/Registro.aspx" 
+    CssClass="link-registro">
+    Regístrate aquí
+</asp:HyperLink>
                     </div>
                     <p class="nota-rol">Serás dirigida a tu panel según tu rol en el sistema</p>
 

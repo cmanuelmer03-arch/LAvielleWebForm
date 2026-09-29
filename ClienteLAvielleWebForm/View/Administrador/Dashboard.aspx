@@ -11,7 +11,7 @@
     <title>Dashboard General - L'Avielle</title>
 
     <!-- conexion con css -->
-    <link href="Content/dashboard.css" rel="stylesheet" />
+<link href="<%= ResolveUrl("~/Content/dashboard.css") %>" rel="stylesheet" />
 
 </head>
 

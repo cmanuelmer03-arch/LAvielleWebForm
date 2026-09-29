@@ -11,7 +11,7 @@
     <title>Gestión de Usuarios - L'Avielle</title>
 
     <!-- conexion con css -->
-    <link href="Content/gestionusuarios.css" rel="stylesheet" />
+    <link href="<%= ResolveUrl("~/Content/gestionusuarios.css") %>" rel="stylesheet" />
 
 </head>
 

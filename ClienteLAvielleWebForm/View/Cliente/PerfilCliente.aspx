@@ -13,9 +13,9 @@
         <div class="perfil-presentacion">
 
             <div class="perfil-foto">
-                <img src="Images/avatar.jpeg" alt="Foto de perfil" />
-                <a href="#">Cambiar Foto</a>
-            </div>
+    <img src="<%= ResolveUrl("~/Images/avatar.jpeg") %>" alt="Foto de perfil" />
+    <a href="#">Cambiar Foto</a>
+</div>
 
             <div class="perfil-datos">
 

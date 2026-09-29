@@ -24,7 +24,7 @@
 
             <div class="promocion-card">
 
-                <img src="Images/promocion1.jpeg" alt="Primera Visita">
+                <img src="<%= ResolveUrl("~/Images/promocion1.jpeg") %>" alt="Primera Visita">
 
                 <div class="promocion-contenido">
 
@@ -54,7 +54,7 @@
 
             <div class="promocion-card">
 
-                <img src="Images/promocion2.jpeg" alt="Pack Novia Completo">
+                <img src="<%= ResolveUrl("~/Images/promocion2.jpeg") %>" alt="Pack Novia Completo">
 
                 <div class="promocion-contenido">
 
@@ -88,7 +88,7 @@
 
             <div class="promocion-card">
 
-                <img src="Images/promocion1.jpeg" alt="Martes de Color">
+                <img src="<%= ResolveUrl("~/Images/promocion1.jpeg") %>" alt="Martes de Color">
 
                 <div class="promocion-contenido">
 
